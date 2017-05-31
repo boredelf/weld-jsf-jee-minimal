@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Signed in</title>
+</h:head>
+<h:body>
+
+    <h1>Welcome, <h:outputLabel value="#{signedIn.user.name}"/>!</h1>
+
+    <h:form>
+        <p:panelGrid columns="3">
+            <p:outputLabel for="userName">New user's name:</p:outputLabel>
+            <p:inputText id="userName" value="#{signedIn.user.name}"/>
+            <p:commandButton value="Change user's name"/>
+        </p:panelGrid>
+    </h:form>
+
+    <h:form>
+        <p:commandButton value="Sign out" action="#{index.signOut}"/>
+    </h:form>
+
+</h:body>
+</html>
