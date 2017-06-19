@@ -11,7 +11,7 @@
     <name>weld-jsf-jee-minimal</name>
 
     <properties>
-        <kotlin.version>1.1.2-2</kotlin.version>
+        <kotlin.version>1.1.2-5</kotlin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -107,6 +107,11 @@
         <dependency>
             <groupId>org.jboss.spec.javax.transaction</groupId>
             <artifactId>jboss-transaction-api_1.1_spec</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.spec.javax.jms</groupId>
+            <artifactId>jboss-jms-api_1.1_spec</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
